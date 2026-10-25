@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#090909">
-<meta name="description" content="Akashh Roy — music production, sound, and selected creative projects.">
+<meta name="description" content="Akashh Roy — music producer and music director with 8–9 years of experience in production, BGM, film music, mixing and mastering.">
 <title>Akashh Roy — Music Portfolio</title>
 <link rel="preconnect" href="https://www.youtube-nocookie.com">
 <link rel="preconnect" href="https://i.ytimg.com">
@@ -36,15 +36,33 @@ section{padding:86px 0}.section-head{display:flex;justify-content:space-between;
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{padding:24px;border:1px solid #302e28;background:linear-gradient(145deg,#121211,#0b0b0b)}.service .icon{color:var(--gold);font-size:1.3rem;margin-bottom:22px}.service h3{font:700 1.05rem Manrope,sans-serif;margin:0 0 8px}.service p{font-size:.87rem;color:var(--muted);margin:0}.contact{background:radial-gradient(ellipse at 80% 50%,rgba(172,126,46,.12),transparent 45%),#0d0d0c;border-top:1px solid rgba(255,255,255,.06)}.contact-box{border:1px solid var(--line);padding:clamp(25px,5vw,55px);display:flex;align-items:center;justify-content:space-between;gap:30px}.contact-box h2{font:800 clamp(2rem,5vw,4rem)/1.08 Manrope,sans-serif;letter-spacing:-.05em;margin:8px 0 12px}.contact-box p{color:var(--muted);max-width:530px;margin:0}.contact-actions{display:flex;flex-direction:column;gap:10px;min-width:190px}.contact-actions a{white-space:nowrap}.footer{padding:24px 0;color:#817e76;font-size:.8rem}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer a:hover{color:var(--gold)}.hidden{display:none!important}
 @media(max-width:850px){.hero-grid,.about-grid{grid-template-columns:1fr;gap:32px}.hero-side{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;border-left:0;padding-left:0}.hero-side .stat{border-bottom:0;border-top:1px solid var(--line)}.video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-box{align-items:flex-start;flex-direction:column}.contact-actions{flex-direction:row;flex-wrap:wrap}.nav-links{gap:14px}}
 @media(max-width:600px){.wrap{width:min(var(--max),calc(100% - 30px))}.nav-inner{height:66px}.menu-btn{display:block}.nav-links{display:none;position:absolute;top:66px;left:0;right:0;background:#0c0c0b;padding:20px 22px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.hero{padding:72px 0 58px}.hero h1{font-size:clamp(3rem,16vw,5rem)}.hero-grid{gap:28px}.hero-side{grid-template-columns:1fr;gap:0}.hero-side .stat{padding:12px 0}.section-head{align-items:flex-start;flex-direction:column}.video-grid,.services-grid{grid-template-columns:1fr}.about-mark{min-height:210px}.about-mark .monogram{font-size:4.5rem}section{padding:62px 0}.contact-actions{flex-direction:column;width:100%}.contact-actions .btn{width:100%}}
+
+.studio-gallery{background:#0a0a09;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05)}
+.studio-labels{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:0 0 24px}
+.studio-labels>div{padding:22px;border:1px solid var(--line);background:linear-gradient(140deg,#171612,#0e0e0d)}
+.studio-labels h3{font:700 1.35rem Manrope,sans-serif;margin:8px 0}
+.studio-labels p{color:var(--muted);font-size:.9rem;margin:0}
+.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.photo-card{margin:0;min-width:0;border:1px solid rgba(255,255,255,.09);background:#111110;overflow:hidden}
+.photo-card img{display:block;width:100%;height:245px;object-fit:cover;transition:transform .35s}
+.photo-card:hover img{transform:scale(1.025)}
+.photo-card.wide{grid-column:span 2}
+.photo-card.wide img{height:300px}
+.photo-card figcaption{padding:12px 14px;color:#d3cfc5;font-size:.82rem}
+.studio-video-head{margin-top:64px}
+.studio-clips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.studio-clips video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#111;border:1px solid rgba(255,255,255,.1)}
+@media(max-width:760px){.studio-labels,.photo-grid,.studio-clips{grid-template-columns:1fr}.photo-card.wide{grid-column:span 1}.photo-card img,.photo-card.wide img{height:auto;max-height:330px;object-fit:cover}}
+
 </style>
-</head>
+<link rel="icon" href="assets/akashh-roy-logo.jpg"><meta property="og:image" content="assets/akashh-roy-logo.jpg"></head>
 <body>
 <header class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="#home" aria-label="Akashh Roy home">AKASHH<span> ROY</span></a>
     <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#work">Selected Work</a><a href="#streaming">Streaming</a><a href="#services">What I Do</a><a href="#contact" class="nav-cta">Let's Collaborate ↗</a>
+      <a href="#about">About</a><a href="#studios">Studios</a><a href="#work">Selected Work</a><a href="#streaming">Streaming</a><a href="#services">What I Do</a><a href="#contact" class="nav-cta">Let's Collaborate ↗</a>
     </nav>
   </div>
 </header>
@@ -52,15 +70,15 @@ section{padding:86px 0}.section-head{display:flex;justify-content:space-between;
 <section class="hero" id="home">
   <div class="wrap hero-grid">
     <div>
-      <div class="eyebrow">Independent Creative · Music</div>
-      <h1>Sound with<br><em>intention.</em></h1>
-      <p class="hero-copy">I'm Akashh Roy — a music-focused creative building sound, shaping ideas, and bringing projects to life. Explore a selection of my work below.</p>
+      <div class="eyebrow">Music Producer · Music Director · Mixing & Mastering Engineer</div>
+      <img class="brand-logo" src="assets/akashh-roy-logo.jpg" alt="Akashh Roy logo" style="display:block;width:min(190px,42vw);height:auto;margin:0 0 24px;"><h1>Sound with<br><em>intention.</em></h1>
+      <p class="hero-copy">I’m Akashh Roy, a music producer and music director with 8–9 years of hands-on experience in music production, mixing, mastering, background scores, and film-related music projects. From the first musical idea to the final master, I help shape distinctive sound with emotion, clarity, and purpose.</p>
       <div class="hero-actions"><a class="btn" href="#work">Explore My Work <span>↘</span></a><a class="btn secondary" href="#contact">Work With Me</a></div>
     </div>
     <aside class="hero-side" aria-label="Portfolio highlights">
-      <div class="stat"><strong>Music</strong><span>Production & creative direction</span></div>
-      <div class="stat"><strong>Sound</strong><span>Mixing & mastering projects</span></div>
-      <div class="stat"><strong>19 Projects</strong><span>Selected video links</span></div>
+      <div class="stat"><strong>8–9 Years</strong><span>Music production experience</span></div>
+      <div class="stat"><strong>Film & BGM</strong><span>Music and background-score work</span></div>
+      <div class="stat"><strong>2 Studios</strong><span>Creative production setup</span></div>
     </aside>
   </div>
 </section>
@@ -68,8 +86,9 @@ section{padding:86px 0}.section-head{display:flex;justify-content:space-between;
   <div class="wrap about-grid">
     <div class="about-mark"><div class="eyebrow">The creative behind the sound</div><div class="monogram">AR.</div><p>AKASHH ROY · MUSIC PORTFOLIO</p></div>
     <div class="about-text"><div class="eyebrow">About</div><h3>Every project deserves its own sound.</h3>
-      <p>I'm Akashh Roy. This portfolio brings together selected music projects and creative work in one place. My focus is on helping ideas find their identity through sound, detail, and emotion.</p>
-      <p>Project credits, artist names, release details, and my exact role can be added to each video card. I keep this space focused on the work itself.</p>
+      <p>I’m Akashh Roy — a music producer, music director, and audio professional with 8–9 years of experience shaping music for artists, releases, visual projects, and film-related work. My work spans music production, arrangement, background score (BGM), mixing, and mastering, with a focus on translating creative ideas into polished, emotionally engaging sound.</p>
+      <p>I’ve had the opportunity to contribute to projects associated with T-Series, as well as BGM and film work. I work across two studio spaces: my home studio for production and creative development, and a professional 7.1 studio environment for focused surround listening and audio work. This portfolio brings together selected projects and releases; specific credits and roles can be shared for individual projects where needed.</p>
+      <p>Whether it’s building a track from scratch, enhancing an artist’s sound, or delivering a final mix and master, my goal is to make every project feel intentional, professional, and true to its identity.</p>
       <div class="tags"><span class="tag">Music Production</span><span class="tag">Mixing</span><span class="tag">Mastering</span><span class="tag">Sound Design</span><span class="tag">Creative Collaboration</span></div>
     </div>
   </div>
@@ -92,10 +111,10 @@ section{padding:86px 0}.section-head{display:flex;justify-content:space-between;
   <div class="wrap">
     <div class="section-head">
       <div><div class="eyebrow">Available across platforms</div><h2>Stream My <span class="gold">Music.</span></h2></div>
-      <p>Find selected releases on your favourite streaming service. Add each release's official links below; buttons appear only for links you provide.</p>
+      <p>Listen to selected releases across streaming platforms. Song titles are temporary labels until the exact release names are added.</p>
     </div>
     <div class="streaming-grid" id="streamingGrid"></div>
-    <p class="edit-note">Add your official song links in the <code>STREAMING_RELEASES</code> list near the bottom of <code>index.html</code>. Use full URLs for Spotify, Apple Music, YouTube Music, Amazon Music, JioSaavn, Deezer, SoundCloud, or any other platform. Unfilled links stay hidden.</p>
+    <p class="edit-note">More releases and platform links can be added as they become available. Song labels currently use temporary names; replace them with official release titles.</p>
   </div>
 </section>
 
@@ -111,12 +130,13 @@ section{padding:86px 0}.section-head{display:flex;justify-content:space-between;
 </section>
 <section class="contact" id="contact">
   <div class="wrap contact-box">
-    <div><div class="eyebrow">Have a project in mind?</div><h2>Let's make<br><span class="gold">something memorable.</span></h2><p>For music projects, production enquiries, collaborations, or professional opportunities, reach out using the links below.</p></div>
+    <div><div class="eyebrow">AKASH ROY MUSIC PRODUCTION STUDIO · HOME STUDIO & PROFESSIONAL 7.1 SURROUND STUDIO</div><h2>Let’s create<br><span class="gold">something memorable.</span></h2><p>For music production, music direction, background scores, mixing, mastering, film projects, or collaborations, get in touch. Based in Surat, India.</p></div>
     <div class="contact-actions">
       <!-- Replace placeholder contact links with your real email and social profile URLs. -->
-      <a class="btn" href="mailto:YOUR_EMAIL@example.com?subject=Music%20Collaboration%20Enquiry">Email for Enquiries ↗</a>
-      <a class="btn secondary" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube Channel ↗</a>
-      <a class="btn secondary" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+      <a class="btn" href="mailto:ar4054007@gmail.com?subject=Music%20Collaboration%20Enquiry">Email for Enquiries ↗</a>
+      <a class="btn secondary" href="https://www.youtube.com/@Akashh" target="_blank" rel="noopener noreferrer">YouTube Channel ↗</a>
+      <a class="btn secondary" href="https://www.instagram.com/akasssshroy/?hl=en" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+      <a class="btn secondary" href="tel:+917990310107">Call: +91 79903 10107 ↗</a>
     </div>
   </div>
 </section>
@@ -150,10 +170,14 @@ const PROJECTS = [
 /* Add one object per release. Add official streaming URLs; blank links are hidden.
    Supported keys: spotify, appleMusic, youtubeMusic, amazonMusic, jiosaavn, deezer, soundcloud, other. */
 const STREAMING_RELEASES = [
-  {title:"Release 01 — Add Song Title",artist:"Add artist / your credit",links:{spotify:"",appleMusic:"",youtubeMusic:"",amazonMusic:"",jiosaavn:"",deezer:"",soundcloud:""}},
-  {title:"Release 02 — Add Song Title",artist:"Add artist / your credit",links:{spotify:"",appleMusic:"",youtubeMusic:"",amazonMusic:"",jiosaavn:"",deezer:"",soundcloud:""}},
-  {title:"Release 03 — Add Song Title",artist:"Add artist / your credit",links:{spotify:"",appleMusic:"",youtubeMusic:"",amazonMusic:"",jiosaavn:"",deezer:"",soundcloud:""}},
-  {title:"Release 04 — Add Song Title",artist:"Add artist / your credit",links:{spotify:"",appleMusic:"",youtubeMusic:"",amazonMusic:"",jiosaavn:"",deezer:"",soundcloud:""}}
+  {title:"Bar Zal Sodla Tu",artist:"Akashh Roy",links:{spotify:"https://open.spotify.com/track/5eBAa1P6t4teDWginFYlCU",appleMusic:"",youtubeMusic:"",amazonMusic:"",jiosaavn:"",deezer:"",soundcloud:""}},
+  {title:"Sona Na Haar",artist:"Akashh Roy",links:{spotify:"https://open.spotify.com/track/0i3WVwIakX9RvEYNd4pf4O",appleMusic:"",youtubeMusic:"",amazonMusic:"",jiosaavn:"",deezer:"",soundcloud:""}},
+  {title:"Spotify Release 3",artist:"Akashh Roy",links:{spotify:"https://open.spotify.com/track/37YHMplMHE3tyIhsffoezP",appleMusic:"",youtubeMusic:"",amazonMusic:"",jiosaavn:"",deezer:"",soundcloud:""}},
+  {title:"Spotify Release 4",artist:"Akashh Roy",links:{spotify:"https://open.spotify.com/track/6U8CFO0xjz0m5A37ALPzoI",appleMusic:"",youtubeMusic:"",amazonMusic:"",jiosaavn:"",deezer:"",soundcloud:""}},
+  {title:"Amazon Music Release",artist:"Akashh Roy",links:{spotify:"",appleMusic:"",youtubeMusic:"",amazonMusic:"https://music.amazon.in/albums/B0GPVFP3K8",jiosaavn:"",deezer:"",soundcloud:""}},
+  {title:"Spotify Release 5",artist:"Akashh Roy",links:{spotify:"https://open.spotify.com/track/5GvjQx7eiuo77mNiMHVhMc",appleMusic:"",youtubeMusic:"",amazonMusic:"",jiosaavn:"",deezer:"",soundcloud:""}},
+  {title:"Spotify Release 6",artist:"Akashh Roy",links:{spotify:"https://open.spotify.com/track/36tUcGhHc67NHOGktHz5sN",appleMusic:"",youtubeMusic:"",amazonMusic:"",jiosaavn:"",deezer:"",soundcloud:""}},
+  {title:"Spotify Release 7",artist:"Akashh Roy",links:{spotify:"https://open.spotify.com/track/3mGBRBAxAzblANOkecDH1r",appleMusic:"",youtubeMusic:"",amazonMusic:"",jiosaavn:"",deezer:"",soundcloud:""}}
 ];
 const PLATFORM_LABELS = {
   spotify:"Spotify", appleMusic:"Apple Music", youtubeMusic:"YouTube Music",
