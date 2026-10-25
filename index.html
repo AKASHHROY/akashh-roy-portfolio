@@ -211,6 +211,43 @@ body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opac
 </section>
 </main>
 
+
+<section id="industry-profile" class="industry-profile">
+  <div class="industry-profile-inner">
+    <div class="industry-profile-kicker">THE SOUND • THE STORIES • THE CULTURE</div>
+    <h2>110+ Songs &amp; <span class="gold">BGM Works</span></h2>
+    <p class="industry-profile-lead">
+      Crafting music with emotion, identity and impact — from memorable melodies to powerful background scores.
+    </p>
+    <p class="industry-profile-copy">
+      I’m Akashh Roy, a music producer and music director working across Gujarati, Marathi, Hindi, Bollywood and Khandeshi music, along with projects in many other languages and styles. From song production and arrangement to background music, mixing and mastering, I bring every project to life with a strong musical vision and attention to detail.
+    </p>
+    <div class="industry-language-tags" aria-label="Languages and music industries">
+      <span>Gujarati</span><span>Marathi</span><span>Hindi</span><span>Bollywood</span><span>Khandeshi</span><span>Multi-language Projects</span>
+    </div>
+    <div class="industry-profile-note">
+      <span class="industry-pulse"></span>
+      <span>Creating, producing and collaborating across languages and genres.</span>
+    </div>
+  </div>
+</section>
+<style>
+.industry-profile{position:relative;isolation:isolate;padding:clamp(64px,8vw,112px) 20px;overflow:hidden}
+.industry-profile:before{content:"";position:absolute;inset:8% 5%;z-index:-1;border-radius:30px;background:radial-gradient(ellipse at 15% 15%,rgba(84,245,255,.17),transparent 45%),radial-gradient(ellipse at 90% 80%,rgba(166,139,255,.2),transparent 45%),linear-gradient(130deg,rgba(39,61,91,.8),rgba(24,39,63,.86));border:1px solid rgba(84,245,255,.28);box-shadow:0 0 48px rgba(84,245,255,.07),inset 0 0 40px rgba(166,139,255,.06)}
+.industry-profile-inner{width:min(920px,100%);margin:auto;text-align:center;padding:clamp(28px,5vw,58px);position:relative}
+.industry-profile-kicker{font-size:.74rem;letter-spacing:.24em;font-weight:800;color:#65f4ff;margin-bottom:18px}
+.industry-profile h2{font-size:clamp(2.3rem,6vw,4.7rem);line-height:1.02;margin:0 0 22px;color:#f7faff}
+.industry-profile h2 .gold{background:linear-gradient(100deg,#54f5ff,#a68bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.industry-profile-lead{font-size:clamp(1.08rem,2vw,1.35rem);line-height:1.6;color:#edf4ff;max-width:740px;margin:0 auto 14px}
+.industry-profile-copy{font-size:1rem;line-height:1.9;color:#c8d7ec;max-width:780px;margin:0 auto 26px}
+.industry-language-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:0 auto 28px}
+.industry-language-tags span{padding:9px 15px;border-radius:999px;border:1px solid rgba(84,245,255,.38);background:rgba(9,22,40,.42);color:#e8f8ff;font-size:.88rem;box-shadow:0 0 18px rgba(84,245,255,.06)}
+.industry-profile-note{display:inline-flex;align-items:center;gap:10px;color:#cbd9ef;font-size:.9rem}
+.industry-pulse{display:inline-block;width:9px;height:9px;border-radius:50%;background:#54f5ff;box-shadow:0 0 14px #54f5ff;animation:industryPulse 1.8s ease-in-out infinite}
+@keyframes industryPulse{0%,100%{opacity:.55;transform:scale(.85)}50%{opacity:1;transform:scale(1.2)}}
+@media(prefers-reduced-motion:reduce){.industry-pulse{animation:none}}
+</style>
+
 <section id="universal-studios" class="studio-real-section">
   <div class="section-heading reveal">
     <p class="eyebrow">INSIDE THE SPACE</p>
