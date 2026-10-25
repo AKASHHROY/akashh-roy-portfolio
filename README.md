@@ -9,7 +9,7 @@ A responsive, single-page portfolio website built with plain HTML, CSS, and Java
 
 ## Personalize before publishing
 Open `index.html` in VS Code or Notepad:
-- Find `const PROJECTS = [` to update each video title, artist/credit, role, and category.
+- Video titles and channel names are now fetched automatically from YouTube when the page opens (requires internet access). You can still edit the `PROJECTS` list to customize categories and your exact role/credits.
 - Video IDs are already filled with the 19 YouTube links supplied by you.
 - Search for `YOUR_EMAIL@example.com` and replace it with your real email address.
 - Replace the YouTube and Instagram placeholder links in the contact section with your real profile URLs.
