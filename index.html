@@ -123,6 +123,13 @@ body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opac
 @media(max-width:560px){.studio-real-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
 
+
+/* Streaming links visibility fix */
+#streaming-showcase{display:block!important;visibility:visible!important;opacity:1!important}
+#streaming-showcase .platform-card{display:flex!important;visibility:visible!important}
+#streaming-showcase .reveal.in-view{opacity:1;transform:translateY(0) scale(1)}
+@media(prefers-reduced-motion:reduce){#streaming-showcase .reveal{opacity:1!important;transform:none!important}}
+
 </style>
 <link rel="icon" href="assets/akashh-roy-logo.jpg"><meta property="og:image" content="assets/akashh-roy-logo.jpg"></head>
 <body>
@@ -255,7 +262,7 @@ body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opac
       <span class="platform-icon spotify-icon">●</span><span class="platform-name">Spotify</span><span class="platform-detail">More releases</span><span class="platform-action">Open track ↗</span>
     </a>
   </div>
-  <p class="streaming-note">More streaming links can be added when the official release URLs are available.</p>
+  <p class="streaming-note">Explore selected releases and listen on your preferred platform.</p>
 </section>
 <style>
 .sound-universe,.streaming-showcase{padding:clamp(60px,8vw,110px) 20px;position:relative}
@@ -615,7 +622,7 @@ const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
   if(entry.isIntersecting){entry.target.classList.add("in-view");revealObserver.unobserve(entry.target);}
 }),{threshold:.12});
 function observeReveals(){
- document.querySelectorAll("section,.video-card,.streaming-card,.release-card").forEach(el=>{
+ document.querySelectorAll(".reveal,section,.video-card,.streaming-card,.release-card,.platform-card").forEach(el=>{
   if(!el.classList.contains("reveal"))el.classList.add("reveal");
   revealObserver.observe(el);
  });
