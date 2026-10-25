@@ -95,6 +95,22 @@ a:hover{color:#54f5ff}
 .reveal.in-view{opacity:1;transform:translateY(0)}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
 
+
+/* LIGHTER NEON UNIVERSE: slate-blue surfaces with cyan and violet glow */
+:root{--bg:#111b2c;--panel:#192941;--panel2:#223650;--text:#f5f9ff;--muted:#c0cde0;--line:rgba(84,245,255,.32)}
+body{background-color:#111b2c!important;background-image:radial-gradient(ellipse at 12% 8%,rgba(0,220,255,.20),transparent 32%),radial-gradient(ellipse at 88% 24%,rgba(139,65,255,.22),transparent 34%),radial-gradient(ellipse at 50% 80%,rgba(0,120,255,.15),transparent 40%)!important}
+.nav{background:rgba(18,29,47,.88)!important;border-bottom-color:rgba(84,245,255,.24)!important}
+.hero{background:radial-gradient(ellipse at 76% 25%,rgba(0,225,255,.22),transparent 38%),radial-gradient(ellipse at 24% 75%,rgba(130,66,255,.19),transparent 34%),linear-gradient(120deg,#17263d,#24344e)!important}
+.hero-copy,.about-text p{color:#d3deef!important}
+.work{background:linear-gradient(145deg,#17263d,#1c2d47)!important}
+.about-mark{background:linear-gradient(145deg,#263a56,#17243a)!important}
+.video-card,.release-card,.studio-card,.contact-card{background:linear-gradient(145deg,rgba(34,52,78,.97),rgba(22,35,57,.97))!important;border-color:rgba(84,245,255,.3)!important}
+.video-card p,.video-card .description{color:#c9d7eb!important}
+.tag,.filter{border-color:rgba(170,205,255,.25)!important;color:#dce8fa!important}
+.filter.active,.filter:hover{background:#54f5ff!important;color:#102033!important}
+.nav-links{color:#e0eafa!important}
+.studio-real-card{background:#20334d!important}
+
 </style>
 <link rel="icon" href="assets/akashh-roy-logo.jpg"><meta property="og:image" content="assets/akashh-roy-logo.jpg"></head>
 <body>
@@ -181,8 +197,10 @@ a:hover{color:#54f5ff}
     </div>
   </div>
 </section>
+</main>
+
 <section id="universal-studios" class="studio-real-section">
-  <div class="section-heading">
+  <div class="section-heading reveal">
     <p class="eyebrow">INSIDE THE SPACE</p>
     <h2>Universal Sound <span class="gold">Studios</span></h2>
     <p class="section-copy">A closer look at the studio, control room and listening lounge.</p>
@@ -207,11 +225,11 @@ a:hover{color:#54f5ff}
   </div>
 </section>
 <style>
-.studio-real-section{padding:clamp(64px,9vw,120px) 0;position:relative;opacity:1!important;visibility:visible!important}
-.studio-real-section .section-heading{max-width:760px;margin:0 auto 34px;text-align:center;padding:0 22px;opacity:1!important;transform:none!important}
+.studio-real-section{padding:clamp(64px,9vw,120px) 0;position:relative}
+.studio-real-section .section-heading{max-width:760px;margin:0 auto 34px;text-align:center;padding:0 22px}
 .studio-real-section h2{font-size:clamp(2.2rem,5vw,4.5rem);line-height:1.03;margin:.2em 0}
 .studio-real-section .section-copy{color:var(--muted);max-width:600px;margin:14px auto 0}
-.studio-real-grid{width:min(var(--max,1180px),calc(100% - 40px));margin:auto;display:grid;position:relative;z-index:2;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.studio-real-grid{width:min(var(--max,1180px),calc(100% - 40px));margin:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .studio-real-card{margin:0;position:relative;overflow:hidden;min-height:220px;border:1px solid rgba(84,245,255,.28);border-radius:18px;background:#080d1a;box-shadow:0 12px 42px rgba(0,0,0,.28);isolation:isolate}
 .studio-real-feature{grid-row:span 2}
 .studio-real-card img{display:block;width:100%;height:100%;min-height:250px;max-height:520px;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .5s ease;filter:saturate(.92)}
@@ -223,9 +241,6 @@ a:hover{color:#54f5ff}
 .studio-real-card figcaption span{font-size:.85rem;color:#b5c6e4}
 @media(max-width:680px){.studio-real-grid{grid-template-columns:1fr;gap:14px}.studio-real-feature{grid-row:auto}.studio-real-card img,.studio-real-feature img{min-height:260px;max-height:390px}}
 </style>
-</main>
-
-
 
 <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> Akashh Roy. All rights reserved.</span><span>Built to let the work speak. <a href="#home">Back to top ↑</a></span></div></footer>
 <script>
