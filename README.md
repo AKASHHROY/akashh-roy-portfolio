@@ -79,3 +79,9 @@ Added supplied studio photos and four supplied video clips converted to silent v
 - Added the supplied Akashh Roy logo to `assets/akashh-roy-logo.jpg` and used it as a favicon/brand image.
 - Profile references a home studio and a professional 7.1 surround studio.
 - Any HTML video elements are muted during browser playback. This mutes playback but does not remove audio from the underlying video files.
+
+
+## 3D Immersive redesign (October 2026)
+This version adds a CSS-rendered chrome sphere with animated orbital rings, a floating glass label, ambient particle field, pointer-responsive light, 3D card tilt, and reduced-motion support. The existing portfolio sections, 19 YouTube project IDs, Spotify release links, streaming section, studio galleries, supplied imagery/videos, contact links, and navigation are retained.
+
+Deploy by uploading the contents of this `akashh_roy_portfolio` folder to the root of the GitHub Pages repository, keeping the `assets` folder beside `index.html`.
